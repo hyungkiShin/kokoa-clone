@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The 6Day's Challenge</title>
     <style>
-        body {
-            height: 100vh;
-            margin: 50px;
-        }
+      h1 {
+        text-align: center;
+      }
 
-        div {
-            width: 300px;
-            height: 300px;
-            background-color: wheat;
-            position: relative;
-        }
+      body {
+        height: 100vh;
+        margin: 50px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+      }
 
-        .green {
-            background-color: teal;
-            height: 100px;
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-            width: 100px;
-        }
+      .box-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 700px;
+      }
+      .box-wrapper > div {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        margin: 10px;
+        border: solid 10px white;
+      }
+
+      .box {
+        margin: 20px;
+        position: relative;
+      }
+
+      .box:nth-child(1) {
+        background-color: #ff6347;
+      }
+
+      .box:nth-child(2) {
+        background-color: #008080;
+      }
+      .box:nth-child(3) {
+        background-color: #deb887;
+      }
+      .box:nth-child(4) {
+        background-color: #d7bfd7;
+      }
+
+      .text-wrapper {
+        padding-left: 13px;
+        height: 123px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 34px;
+      }
+
+      .text-wrapper > span {
+        font-family: serif;
+        font-weight: 800;
+        display: block;
+        margin-top: 18px;
+      }
+
+      .name {
+        font-size: 20px;
+      }
+
+      .code {
+        font-size: 15px;
+      }
     </style>
-</head>
-<body>
-    <h1>The Best Colors</h1>
-
+  </head>
+  <body>
     <div>
-        <div class="green"></div>
+      <h1>The Best Colors</h1>
+      <div class="box-wrapper">
+        <div class="box">
+          <div class="text-wrapper">
+            <span class="name">Tomato</span>
+            <span class="code">#FFCECE</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-wrapper">
+            <span class="name">Teal</span>
+            <span class="code">#008080</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-wrapper">
+            <span class="name">Burlywood</span>
+            <span class="code">#DEB887</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text-wrapper">
+            <span class="name">Thistle</span>
+            <span class="code">#D7BFD7</span>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
