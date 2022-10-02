@@ -1,0 +1,83 @@
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6cbcbe;
+    flex-direction: column;
+  }
+
+  .loading {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10%;
+  }
+  .loading span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  /*  ======================== */
+
+  @keyframes loaders {
+    0% {
+      transform: scaleY(1);
+    }
+    25% {
+      transform: scaleY(2);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .loader {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .bar {
+    width: 20px;
+    height: 50px;
+    background-color: white;
+    animation: loaders 1s infinite;
+    transition: cubic-bezier(0.3, 0.5, 0.25, 1);
+  }
+
+  .bar:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .bar:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .bar:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .bar:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .bar:nth-child(5) {
+    animation-delay: 0.5s;
+  }
