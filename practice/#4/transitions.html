@@ -14,12 +14,13 @@
         border-radius: 5px;
         font-size: 55px;
         /* transition: background-color 3s ease-in-out, color 5s ease-in-out; */
-        transition: all 1s ease-in-out;
+        transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+          border-radius 5s ease-in-out, background-color 10s ease-out;
       }
 
       a:hover {
-        border-radius: 20px;
         color: tomato;
+        border-radius: 20px;
         background-color: wheat;
         /* transition 은 root 에 있어야 한다 (상태에 있으면 안됨) */
         /* transition: font-size 5s ease-in-out; */
