@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&family=Nanum+Pen+Script&family=Open+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  font-family: Charis SIL;
+  font-weight: bolder;
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  margin: 0px;
+}
+
+[class^="row_div"] {
+  display: flex;
+}
+
+[class^="main_box"] {
+  height: 400px;
+  width: 250px;
+  border: white 5px solid;
+  margin: 15px;
+  font-size: 20px;
+  position: relative;
+}
+[class^="main_box"] p:nth-child(2) {
+  font-size: 15px;
+}
+.row_div_01 .main_box:first-child {
+  background-color: tomato;
+}
+.row_div_01 .main_box:nth-child(2) {
+  background-color: teal;
+}
+.row_div_02 .main_box:first-child {
+  background-color: burlywood;
+}
+.row_div_02 .main_box:nth-child(2) {
+  background-color: thistle;
+}
+.sub_box {
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
