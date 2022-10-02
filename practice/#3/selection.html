@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selection</title>
+    <style>
+      :root {
+        --main-color: #489ee3;
+      }
+
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+
+      span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      /* p::selection {
+        color: white;
+        background-color: yellowgreen;
+      } */
+
+      p::first-letter {
+        color: white;
+        font-size: 20px;
+        background-color: yellowgreen;
+      }
+
+      /* p::first-line {
+        color: white;
+        font-size: 20px;
+        background-color: yellowgreen;
+      } */
+
+      /* 끝에 오는경우에는 $ 처음에 오는경우에는 ^ */
+      input[type^="password"] {
+        color: white;
+        font-size: 50px;
+        background-color: yellowgreen;
+      }
+
+      a {
+        color: var(--main-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- selection, first-letter, first-line -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+      voluptatem soluta quibusdam veniam aperiam perferendis necessitatibus cum
+      nisi sed ullam non labore, exercitationem dolor, officiis aliquid adipisci
+      in dolore distinctio?
+    </p>
+    <a href="">website</a>
+  </body>
+</html>
