@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  width: 420px;
+  background-color: gray;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  background-color: #ffce32;
+  align-items: center;
+  padding: 12px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-wrapper {
+  box-shadow: 0px 3px 5px 3px #efefef;
+  border-radius: 25px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 47px;
+  width: 87%;
+  margin: 0 auto;
+  position: absolute;
+  padding: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.search-input {
+  border: none;
+  padding-left: 18px;
+}
+
+.main--image {
+  width: 139px;
+  border-radius: 10px;
+  height: 217px;
+}
+
+.article_wrapper {
+  padding: 15px;
+}
+
+.book--section {
+  margin-top: 40px;
+  padding: 8px;
+}
+
+.book_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book_cover {
+  width: 210px;
+}
+
+.book_text {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.book_sub_text {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 12px;
+}
+
+.star_wrapper {
+  margin-bottom: 25px;
+}
+
+.star_color {
+  color: #ffce36;
+}
+
+.star_color_off {
+  color: #f0f0f0;
+}
+
+.book_tag {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+  margin-bottom: 20px;
+}
+
+.book_tag_name {
+  height: 34px;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  border-radius: 3px;
+}
+
+.book_mark--wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  align-items: center;
+}
+
+.book_mark--icon {
+  width: 45px;
+  background-color: #ffce32;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.book_show--button {
+  background-color: #0d0d0d;
+  height: 40px;
+  color: #d2cbcb;
+  display: flex;
+  align-items: center;
+  width: 82px;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.book_list {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.book_list .book--img {
+  width: 100px;
+  height: 160px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.book_img--size {
+  width: 100px;
+  height: 160px;
+  margin-right: 10px;
+}
