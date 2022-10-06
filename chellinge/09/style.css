@@ -46,6 +46,7 @@ header {
 .search-input {
   border: none;
   padding-left: 18px;
+  width: 90%;
 }
 
 .main--image {
