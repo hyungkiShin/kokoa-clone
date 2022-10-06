@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 첫번째 페이지 -->
+    <section class="play_wrapper">
+      <header class="play_header">
+        <i class="fa-solid fa-left-long fa-lg"></i>
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </header>
+      <article>
+        <!-- artist profile -->
+        <div class="artist">
+          <img
+            src="https://musicmeta-phinf.pstatic.net/artist/000/330/330966.jpg?type=ff300_300&v=202210070101"
+            alt="창모"
+            class="artist--img"
+          />
+        </div>
+
+        <!-- contents -->
+        <div class="profile">
+          <span class="profile--name">Chang Mo</span>
+          <span class="profile--contents">Rap, Hip-Hop</span>
+        </div>
+      </article>
+
+      <!-- button -->
+      <article>
+        <div class="button_wrapper">
+          <div class="button_first button_style">Shuffle</div>
+          <div class="button_second button_style">
+            <i class="fa-solid fa-heart"></i>
+            <span>212 981</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- list -->
+      <article>
+        <ul class="list-wrapper">
+          <li class="list--column">
+            <div class="list--box">
+              <img
+                class="list-image"
+                src="https://search.pstatic.net/common/?src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F003%2F591%2F3591286.jpg%3Ftype%3Dr204Fll%26v%3D20220514155016&type=os121_121"
+                alt=""
+              />
+              <div>
+                <span class="list--artist">창모(CHANGMO)</span>
+                <span class="list_song_name">METEOR</span>
+              </div>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical" style="color: gray"></i>
+          </li>
+          <li class="list--column">
+            <div class="list--box">
+              <img
+                class="list-image"
+                src="https://musicmeta-phinf.pstatic.net/album/000/651/651280.jpg?type=r360Fll&v=202210070201"
+                alt=""
+              />
+              <div>
+                <span class="list--artist">창모(CHANGMO)</span>
+                <span class="list_song_name">돈 벌 시간 2</span>
+              </div>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical" style="color: gray"></i>
+          </li>
+          <li class="list--column">
+            <div class="list--box">
+              <img
+                class="list-image"
+                src="https://musicmeta-phinf.pstatic.net/album/006/646/6646924.jpg?type=r360Fll&v=202210070201"
+                alt=""
+              />
+              <div>
+                <span class="list--artist">창모(CHANGMO)</span>
+                <span class="list_song_name">UNDERGROUND ROCKSTAR</span>
+              </div>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical" style="color: gray"></i>
+          </li>
+          <li class="list--column">
+            <div class="list--box">
+              <img
+                class="list-image"
+                src="https://musicmeta-phinf.pstatic.net/album/001/966/1966505.jpg?type=r100Fll&v=202210070201"
+                alt=""
+              />
+              <div>
+                <span class="list--artist">창모(CHANGMO)</span>
+                <span class="list_song_name">METEOR</span>
+              </div>
+            </div>
+
+            <i class="fa-solid fa-ellipsis-vertical" style="color: gray"></i>
+          </li>
+        </ul>
+      </article>
+
+      <article class="article_center">
+        <div class="playing_wrapper">
+          <div class="p_wrapper">
+            <span class="play--title">창모</span>
+            <span class="play--sub_title">UNDERGROUND ROCKSTAR</span>
+          </div>
+          <div class="btn">
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-pause fa-2xl"></i>
+            <i class="fa-solid fa-forward-step"></i>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 두번째 페이지 -->
+    <section class="play_wrapper">
+      <header class="play_header">
+        <i class="fa-solid fa-left-long fa-lg"></i>
+        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+      </header>
+
+      <article>
+        <div class="song--center">
+          <img
+            class="song--img"
+            src="https://musicmeta-phinf.pstatic.net/album/006/646/6646924.jpg?type=r360Fll&v=202210070201"
+            alt=""
+          />
+        </div>
+        <div class="song--text_wrapper">
+          <span class="song_name">UNDERGROUND ROCKSTAR</span>
+          <span class="song_title">창모</span>
+        </div>
+
+        <div class="play_time--wrapper">
+            <span class="play_time">1:30</span>
+            <span class="play_time">3:30</span>
+        </div>
+        <div class="song_range--wrapper">
+          <input
+            class="song_range"
+            type="range"
+            id="cowbell"
+            name="cowbell"
+            min="0"
+            max="100"
+            value="90"
+            step="10"
+          />
+          <label for="cowbell"></label>
+        </div>
+
+        <div class="song_play--btn">
+            <i class="fa-solid fa-repeat fa-lg" style="color: gray;"></i>
+            <i class="fa-solid fa-backward-step fa-lg"></i>
+            <i class="fa-solid fa-circle-play fa-2xl"></i>
+            <i class="fa-solid fa-forward-step fa-lg"></i>
+            <i class="fa-solid fa-shuffle fa-lg" style="color: gray;"></i>
+        </div>
+      </article>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/c8505b9544.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
