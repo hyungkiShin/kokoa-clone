@@ -58,3 +58,10 @@
 
 ### position absolute
 - 잊지말자.. 부모가 항상 position:reletive 여야 한다
+
+### flex direction column 의 비밀
+- 원래 div는 양 옆으로 긴데 display:flex;를 하면 div가 글자 크기에 맞춰서 줄어든다. 
+- 그리고 flex-direction에 column을 주면 다시 block이 가진 특성에 맞게 양 옆의 공간을 차지하게 되는 것.
+
+
+### position: fixed 를 하면 그 요소는 다른 요소와 다른 layer에 위치하게 된다.
