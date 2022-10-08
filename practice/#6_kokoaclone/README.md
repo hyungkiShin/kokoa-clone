@@ -65,3 +65,26 @@
 
 
 ### position: fixed 를 하면 그 요소는 다른 요소와 다른 layer에 위치하게 된다.
+
+### 시간과 말풍선 위치를 바꾸는 방법
+1. 
+```css
+.message-row--own .message__time {
+order: 0;
+margin-right: 5px;
+}
+.message-row--own .message__bubble {
+order: 1;
+margin-right: 0px;
+}
+```
+
+flex children에게 사용할 수 있다. 자식 수가 많으면 어렵다.
+
+2. 간단하고 쿨한방법
+```css
+.message-row--own .message__info {
+flex-direction: row-reverse;
+}
+```
+
