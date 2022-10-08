@@ -1,11 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 .status-bar {
   display: flex;
   justify-content: center;
+  padding: 5px 3px;
 }
 .status-bar__column {
   width: 33%;
