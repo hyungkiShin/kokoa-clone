@@ -88,3 +88,10 @@ flex-direction: row-reverse;
 }
 ```
 
+### visibility: hidden;
+- 마우스에 걸리지 않게 빠져버리는것.
+
+-CSS에서 visibility: hidden 으로 HTML 의 화면을 마우스로부터 숨길 수는 있어도 완전히 사라지게 하지 못한다.(완전히 사라지게 하려면 JS 필요하다.)
+-HTML에서 animation: forwards으로 애니메이션의 마지막 값을 기억할 수 있다.
+-CSS에서 animation-delay로 애니메이션 시작을 지연시킬 수 있다.
+

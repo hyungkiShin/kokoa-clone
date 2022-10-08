@@ -109,7 +109,11 @@
     <div class="splash-screen">
       <i class="fas fa-comment"></i>
     </div>
-
+    <script>
+      setTimeout(() => {
+        document.querySelectorAll(".splash-screen")[0].remove();
+      }, 3000);
+    </script>
     <script
       src="https://kit.fontawesome.com/c8505b9544.js"
       crossorigin="anonymous"
